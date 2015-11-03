@@ -1,0 +1,31 @@
+<template name="Home">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h1 class="text-center">Meteor PDF Tutorial</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                {{> quickForm collection="Pokemon" id="insertPokemonForm" type="insert"}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                {{#each pokemon}}
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" width="75px" src="{{image_url}}">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">{{name}}</h4>
+                            <p>{{description}}</p>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</template>
