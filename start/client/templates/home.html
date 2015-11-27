@@ -13,14 +13,12 @@
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
                 {{#each pokemon}}
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" width="75px" src="{{image_url}}">
-                            </a>
+                    <div class="row">
+                        <div class="col-sm-3 col-sm-offset-2">
+                            <img src="{{image_url}}" width="75" alt="">
                         </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">{{name}}</h4>
+                        <div class="col-sm-7">
+                            <h4>{{name}}</h4>
                             <p>{{description}}</p>
                         </div>
                     </div>
