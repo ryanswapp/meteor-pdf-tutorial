@@ -24,7 +24,6 @@ Meteor.methods({
       // Grab required packages
       var webshot = Meteor.npmRequire('webshot');
       var fs      = Npm.require('fs');
-      var Fiber = Npm.require('fibers');
       var Future = Npm.require('fibers/future');
 
       var fut = new Future();
