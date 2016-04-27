@@ -1,0 +1,18 @@
+{
+  "name": "final_updated",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "fibers": "^1.0.10",
+    "meteor-node-stubs": "^0.2.3",
+    "phantomjs": "^2.1.7",
+    "webshot": "0.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
